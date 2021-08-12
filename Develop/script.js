@@ -1,9 +1,9 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
-const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-const characters = '!@#$%^&*()';
-const upperCase = randUpper;
-const lowerCase = randLower;
+var numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+var characters = '!@#$%^&*()';
+var upperCase = randUpper;
+var lowerCase = randLower;
 
 // Write password to the #password input
 function writePassword() {
@@ -30,7 +30,7 @@ function writePassword() {
     randUppercase = confirm("Will this contain Uppercase letters?");
     randLowercase = confirm("Will this contain Lowercase letters?"); 
 
-     // Else if for 4 negative options
+     //for 4 negative options
      if (!randCharacter && !randNumber && !randUppercase && !randLowercase) {
       choices = alert("At least one of the criteria must be met!");
      }
