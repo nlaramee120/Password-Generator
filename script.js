@@ -1,6 +1,5 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
-var numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 var characters = '!@#$%^&*()';
 var upperCase = randUpper;
 var lowerCase = randLower;
@@ -18,7 +17,7 @@ function writePassword() {
   } else if (enter < 8 || enter > 128) {
       // Validates user input
       // Start user input prompts
-      enter = parseInt(prompt("You must choose between 8 and 128"));
+      enter = (prompt("You must choose between 8 and 128"));
   }
 
   else {
